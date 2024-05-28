@@ -556,4 +556,99 @@ font-size: 30px;
         }
 
         
-        
+        .box-btn {
+ 
+  height: 100%;
+  display: flex;
+  align-items: center; 
+}
+.neon {
+  display: block;
+  margin: auto;
+  padding: 0.5em 1.5em;
+  font-family: 'open_sansregular';
+  font-size: 1.5em;
+  text-decoration: none;
+  text-shadow:-2px 4px 4px rgb(255, 166, 0), 0 0 10px #ff9b06, inset 1px 1px 1px white;
+  color: #f09f44;
+  border: 2px solid;
+  border-radius: 50px;
+  background-color: transparent;
+  box-shadow: 
+    0 1px 2px rgba(0,0,0, 0.6), 
+    2px 1px 4px rgba(0,0,0, 0.3), 
+    2px 4px 3px rgba(3,0,128, 0.3), 
+    0 0 7px 2px rgb(255, 166, 0),
+    inset 0 1px 2px rgba(0,0,0, 0.6), 
+    inset 2px 1px 4px rgba(0,0,0, 0.3), 
+    inset 2px 4px 3px rgba(3,0,128, 0.3), 
+    inset 0 0 7px 2px rgb(255, 166, 0);
+  animation: piscando 3s infinite;
+}
+@keyframes piscando {
+  0% {
+    border-color: transparent;
+    opacity: 0.1;
+  }
+  
+  2% {
+    border-color:black;
+    opacity: 1;
+  }
+  
+  4% {
+    border-color: transparent;
+    opacity: 0.5;
+  }
+  
+  8% {
+    border-color:white;
+    opacity: 1;
+  }
+  
+  28% {
+    border-color: white;
+    opacity: 1;
+  }
+  
+  30% {
+    border-color: transparent;
+    opacity: 0.5;
+  }
+  
+  36% {
+    border-color:white;
+    opacity: 1;
+  }
+  
+  100% {
+    border-color: white;
+    opacity: 1;
+  }
+}
+
+.link-neon {
+ 
+    display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: 500px;
+    display: inline-block;
+    border-bottom: 1px #ebd40b solid;
+    font-family: 'open_sanslight';
+    font-size:1.3em;
+    color:#ffffff;
+    text-decoration:none;
+    text-decoration: normal;
+    text-align: center;
+    text-shadow: 0 0 5px rgb(255, 255, 255) , 0 0 10px rgb(255, 255, 255) , 0 0 20px rgb(255, 255, 255) , 0 0 30px #ffa600 , 0 0 70px #ff9100 , 0 0 40px #ff00de , 0 0 60px #ff00de ;
+    -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.link-neon:hover {
+ 
+   text-shadow: 0 0 5px rgb(172, 2, 2) , 0 0 20px rgb(172, 2, 2) , 0 0 30px rgb(172, 2, 2) , 0 0 40px rgb(172, 2, 2) , 0 0 70px rgb(172, 2, 2) , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+   border-bottom: 1px #02a6ac solid;
+}
